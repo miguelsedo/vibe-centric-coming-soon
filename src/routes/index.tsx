@@ -26,22 +26,24 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background px-6 py-12 font-sans antialiased">
-      <section className="w-full max-w-xl text-center">
+    <main className="flex min-h-screen flex-col bg-background px-6 py-12 font-sans antialiased">
+      <section className="flex flex-1 flex-col items-center justify-center text-center">
         <h1 className="text-balance text-3xl font-semibold tracking-tight text-brand sm:text-4xl md:text-5xl">
           Unsere Website wird derzeit überarbeitet
         </h1>
 
         <div className="mx-auto mt-6 h-px w-16 bg-foreground/40" />
+      </section>
 
-        <div className="mt-6 space-y-1 text-foreground">
+      <footer className="mt-auto flex flex-col items-center pb-4 text-center">
+        <div className="space-y-1 text-foreground">
           <p className="font-semibold">VEDA GmbH Steuerberatungsgesellschaft</p>
           <p className="text-sm text-foreground/80">
             VEDA WP GmbH Wirtschaftsprüfungsgesellschaft
           </p>
         </div>
 
-        <ul className="mx-auto mt-6 inline-flex flex-col items-start gap-2 text-left text-sm text-foreground sm:text-base">
+        <ul className="mt-6 inline-flex flex-col items-start gap-2 text-left text-sm text-foreground sm:text-base">
           <li className="flex items-center gap-3">
             <MapPin className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>Aschauer Straße 30, 81549 München</span>
@@ -63,7 +65,7 @@ function Index() {
             </a>
           </li>
         </ul>
-      </section>
+      </footer>
     </main>
   );
 }
