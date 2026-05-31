@@ -1,29 +1,82 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { MapPin, Phone, Printer, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "VEDA Kanzlei – Website wird überarbeitet" },
+      {
+        name: "description",
+        content:
+          "Unsere Website wird derzeit überarbeitet. Kontaktieren Sie VEDA GmbH Steuerberatungsgesellschaft in München.",
+      },
+      { property: "og:title", content: "VEDA Kanzlei – Website wird überarbeitet" },
+      {
+        property: "og:description",
+        content: "Our website is currently being updated.",
+      },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="flex min-h-screen items-center justify-center bg-background px-6 py-16 font-sans antialiased">
+      <section className="w-full max-w-2xl text-center">
+        <h1 className="text-balance text-3xl font-semibold tracking-tight text-brand sm:text-4xl md:text-5xl">
+          Unsere Website wird derzeit überarbeitet
+        </h1>
+        <p className="mt-4 text-base text-muted-foreground sm:text-lg">
+          Our website is currently being updated.
+        </p>
+
+        <div className="mx-auto mt-10 h-px w-24 bg-border" />
+
+        <div className="mt-10 space-y-1 text-foreground">
+          <p className="font-semibold">VEDA GmbH Steuerberatungsgesellschaft</p>
+          <p className="text-sm text-muted-foreground">
+            VEDA WP GmbH Wirtschaftsprüfungsgesellschaft
+          </p>
+        </div>
+
+        <ul className="mx-auto mt-8 flex flex-col items-start gap-3 text-sm text-foreground sm:text-base">
+          <li className="flex w-full items-start gap-3">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
+            <span>Aschauer Straße 30, 81549 München</span>
+          </li>
+          <li className="flex w-full items-start gap-3">
+            <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
+            <a
+              href="tel:+498974118700"
+              className="transition-colors hover:text-brand"
+            >
+              +49 89 74 11 87 0 - 0
+            </a>
+          </li>
+          <li className="flex w-full items-start gap-3">
+            <Printer className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
+            <span>+49 89 74 11 87 0 - 19</span>
+          </li>
+          <li className="flex w-full items-start gap-3">
+            <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
+            <a
+              href="mailto:info@veda-kanzlei.de"
+              className="transition-colors hover:text-brand"
+            >
+              info@veda-kanzlei.de
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
   );
 }
