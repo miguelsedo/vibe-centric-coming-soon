@@ -33,16 +33,16 @@ function Index() {
         </h1>
 
         <div className="mx-auto mt-6 h-px w-16 bg-foreground/40" />
-      </section>
 
-      <footer className="absolute bottom-8 left-1/2 w-full -translate-x-1/2 pb-8 text-center">
-        <div className="space-y-1 text-foreground">
+        <div className="mt-6 space-y-1 text-foreground">
           <p className="font-semibold">VEDA GmbH Steuerberatungsgesellschaft</p>
           <p className="text-sm text-foreground/80">
             VEDA WP GmbH Wirtschaftsprüfungsgesellschaft
           </p>
         </div>
+      </section>
 
+      <footer className="absolute bottom-8 left-1/2 w-full -translate-x-1/2 pb-8 text-center">
         <ul className="mx-auto mt-6 w-max text-left text-sm text-foreground sm:text-base">
           <li className="flex items-center gap-3">
             <MapPin className="h-4 w-4 shrink-0 text-brand" aria-hidden />
@@ -51,12 +51,12 @@ function Index() {
           <li className="mt-2 flex items-center gap-3">
             <Phone className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <a href="tel:+498974118700" className="transition-colors hover:text-brand">
-              +49 89 74 11 87 0 - 0
+              +49 89 74 11 87 0 0
             </a>
           </li>
           <li className="mt-2 flex items-center gap-3">
             <Printer className="h-4 w-4 shrink-0 text-brand" aria-hidden />
-            <span>+49 89 74 11 87 0 - 19</span>
+            <span>+49 89 74 11 87 0 19</span>
           </li>
           <li className="mt-2 flex items-center gap-3">
             <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden />
