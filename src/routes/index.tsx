@@ -26,8 +26,8 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="flex min-h-screen flex-col bg-background px-6 py-12 font-sans antialiased">
-      <section className="flex flex-1 flex-col items-center justify-center text-center">
+    <main className="relative flex min-h-screen items-center justify-center bg-background px-6 py-12 font-sans antialiased">
+      <section className="text-center">
         <h1 className="text-balance text-3xl font-semibold tracking-tight text-brand sm:text-4xl md:text-5xl">
           Unsere Website wird derzeit überarbeitet
         </h1>
@@ -35,7 +35,7 @@ function Index() {
         <div className="mx-auto mt-6 h-px w-16 bg-foreground/40" />
       </section>
 
-      <footer className="mt-auto flex flex-col items-center pb-4 text-center">
+      <footer className="absolute bottom-8 left-1/2 w-full -translate-x-1/2 pb-8 text-center">
         <div className="space-y-1 text-foreground">
           <p className="font-semibold">VEDA GmbH Steuerberatungsgesellschaft</p>
           <p className="text-sm text-foreground/80">
@@ -43,22 +43,22 @@ function Index() {
           </p>
         </div>
 
-        <ul className="mt-6 inline-flex flex-col items-start gap-2 text-left text-sm text-foreground sm:text-base">
+        <ul className="mx-auto mt-6 w-max text-left text-sm text-foreground sm:text-base">
           <li className="flex items-center gap-3">
             <MapPin className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>Aschauer Straße 30, 81549 München</span>
           </li>
-          <li className="flex items-center gap-3">
+          <li className="mt-2 flex items-center gap-3">
             <Phone className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <a href="tel:+498974118700" className="transition-colors hover:text-brand">
               +49 89 74 11 87 0 - 0
             </a>
           </li>
-          <li className="flex items-center gap-3">
+          <li className="mt-2 flex items-center gap-3">
             <Printer className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>+49 89 74 11 87 0 - 19</span>
           </li>
-          <li className="flex items-center gap-3">
+          <li className="mt-2 flex items-center gap-3">
             <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <a href="mailto:info@veda-kanzlei.de" className="transition-colors hover:text-brand">
               info@veda-kanzlei.de
