@@ -11,10 +11,6 @@ export const Route = createFileRoute("/")({
           "Unsere Website wird derzeit überarbeitet. Kontaktieren Sie VEDA GmbH Steuerberatungsgesellschaft in München.",
       },
       { property: "og:title", content: "VEDA Kanzlei – Website wird überarbeitet" },
-      {
-        property: "og:description",
-        content: "Our website is currently being updated.",
-      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -30,48 +26,39 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-background px-6 py-16 font-sans antialiased">
-      <section className="w-full max-w-2xl text-center">
+    <main className="flex min-h-screen items-center justify-center bg-background px-6 py-12 font-sans antialiased">
+      <section className="w-full max-w-xl text-center">
         <h1 className="text-balance text-3xl font-semibold tracking-tight text-brand sm:text-4xl md:text-5xl">
           Unsere Website wird derzeit überarbeitet
         </h1>
-        <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-          Our website is currently being updated.
-        </p>
 
-        <div className="mx-auto mt-10 h-px w-24 bg-border" />
+        <div className="mx-auto mt-6 h-px w-16 bg-foreground/40" />
 
-        <div className="mt-10 space-y-1 text-foreground">
+        <div className="mt-6 space-y-1 text-foreground">
           <p className="font-semibold">VEDA GmbH Steuerberatungsgesellschaft</p>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-foreground/80">
             VEDA WP GmbH Wirtschaftsprüfungsgesellschaft
           </p>
         </div>
 
-        <ul className="mx-auto mt-8 flex flex-col items-start gap-3 text-sm text-foreground sm:text-base">
-          <li className="flex w-full items-start gap-3">
-            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
+        <ul className="mt-6 flex flex-col items-center gap-2 text-sm text-foreground sm:text-base">
+          <li className="flex items-center justify-center gap-2">
+            <MapPin className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>Aschauer Straße 30, 81549 München</span>
           </li>
-          <li className="flex w-full items-start gap-3">
-            <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
-            <a
-              href="tel:+498974118700"
-              className="transition-colors hover:text-brand"
-            >
+          <li className="flex items-center justify-center gap-2">
+            <Phone className="h-4 w-4 shrink-0 text-brand" aria-hidden />
+            <a href="tel:+498974118700" className="transition-colors hover:text-brand">
               +49 89 74 11 87 0 - 0
             </a>
           </li>
-          <li className="flex w-full items-start gap-3">
-            <Printer className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
+          <li className="flex items-center justify-center gap-2">
+            <Printer className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>+49 89 74 11 87 0 - 19</span>
           </li>
-          <li className="flex w-full items-start gap-3">
-            <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden />
-            <a
-              href="mailto:info@veda-kanzlei.de"
-              className="transition-colors hover:text-brand"
-            >
+          <li className="flex items-center justify-center gap-2">
+            <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden />
+            <a href="mailto:info@veda-kanzlei.de" className="transition-colors hover:text-brand">
               info@veda-kanzlei.de
             </a>
           </li>
