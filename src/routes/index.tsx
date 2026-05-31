@@ -41,22 +41,22 @@ function Index() {
           </p>
         </div>
 
-        <ul className="mt-6 flex flex-col items-center gap-2 text-sm text-foreground sm:text-base">
-          <li className="flex items-center justify-center gap-2">
+        <ul className="mx-auto mt-6 inline-flex flex-col items-start gap-2 text-left text-sm text-foreground sm:text-base">
+          <li className="flex items-center gap-3">
             <MapPin className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>Aschauer Straße 30, 81549 München</span>
           </li>
-          <li className="flex items-center justify-center gap-2">
+          <li className="flex items-center gap-3">
             <Phone className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <a href="tel:+498974118700" className="transition-colors hover:text-brand">
               +49 89 74 11 87 0 - 0
             </a>
           </li>
-          <li className="flex items-center justify-center gap-2">
+          <li className="flex items-center gap-3">
             <Printer className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <span>+49 89 74 11 87 0 - 19</span>
           </li>
-          <li className="flex items-center justify-center gap-2">
+          <li className="flex items-center gap-3">
             <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden />
             <a href="mailto:info@veda-kanzlei.de" className="transition-colors hover:text-brand">
               info@veda-kanzlei.de
